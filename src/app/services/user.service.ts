@@ -41,7 +41,7 @@ export class UserService {
 			}
 		}
  
-		return this.http.post('http://api.psantos.dev:3000/user_token', JSON.stringify(my_data), { headers })
+		return this.http.post('https://demo-api-2016.herokuapp.com/user_token', JSON.stringify(my_data), { headers })
 			.map(res => res.json())
 			.subscribe(
 				(data) => this.saveJwt(data),
